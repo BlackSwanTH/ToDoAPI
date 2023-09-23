@@ -7,6 +7,8 @@ using System.IdentityModel.Tokens.Jwt;
 using ToDoAPI.Models;
 using System.Data.Common;
 using Microsoft.VisualBasic;
+using System.Globalization;
+using System.Reflection.Emit;
 
 namespace ToDoAPI.Controllers;
 
@@ -63,9 +65,17 @@ public class UsersController : ControllerBase
         if (db.User.Find(Userid) == null) return Unauthorized();
         something.User_Id = Userid;
         something.Name = data.Name;
+        //to thai date
+        // something.When = thaidate(data.When);
+        System.Globalization.CultureInfo _cultureaEnInfo = new System.Globalization.CultureInfo("th-TH");
+        //date = DateTime.Parse(thaiBudistDate, provider);
+        var s = data.When.ToString("dd MMM yyyy");
+        string so = data.When.ToString("dd MMM yyyy", _cultureaEnInfo);
+        Console.WriteLine(so);
+        //something.When = DateTime.ParseExact(so, "dd MMM yyyy", CultureInfo.InvariantCulture);
         something.When = data.When;
         db.Activity.Add(something);
         db.SaveChanges();
-        return Ok(something.Id);
+        return Ok(new { id = something.Id });
     }
 }

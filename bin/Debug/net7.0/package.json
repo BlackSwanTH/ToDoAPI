@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@to-da-moon/thai-date": "^0.0.17",
     "axios": "^1.5.0"
   }
 }

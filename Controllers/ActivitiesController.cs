@@ -50,7 +50,7 @@ public class ActivitiesController : ControllerBase
         db.SaveChanges();
 
         return Ok(a.Id);
-        // return Ok(new { name = data.Name, when = data.When });
+        // return Ok(new { a.name = data.Name, a.when = data.When });
     }
 
     [Route("{id}")]
