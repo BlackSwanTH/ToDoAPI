@@ -1,0 +1,24 @@
+import React, { useEffect } from "react";
+import { useCookies } from "react-cookie";
+import { useNavigate } from "react-router-dom";
+
+function SignOut() {
+  let [cookies, setCookie] = useCookies(["token"]);
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/signin");
+  });
+
+  return (
+    <>
+      <div>
+        <center>
+          <h1>กำลังออกจากระบบ</h1>
+        </center>
+      </div>
+    </>
+  );
+}
+
+export default SignOut;

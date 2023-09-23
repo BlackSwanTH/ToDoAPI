@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit");
+
+body {
+  margin: 0;
+  font-family: "Kanit";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#page-wrap {
+  padding-top: 0px;
+  padding-left: 0px;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  padding: 0%;
+  margin: 0%;
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+li {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+li:hover {
+  background-color: rgb(100, 99, 99);
+  color: rgb(255, 255, 255);
+}

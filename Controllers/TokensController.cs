@@ -60,9 +60,18 @@ public class TokensController : ControllerBase
             ),
             SecurityAlgorithms.HmacSha256Signature
         );
+        // string string1 = "78123098213";
+        // string hash2 = Convert.ToBase64String(
+        //     KeyDerivation.Pbkdf2(
+        //         password: string1,
+        //         salt: Convert.FromBase64String(user.Salt),
+        //         prf: KeyDerivationPrf.HMACSHA1,
+        //         iterationCount: 10000,
+        //         numBytesRequested: 256 / 8
+        //     )
+        // );
         var handler = new JwtSecurityTokenHandler();
         var token = handler.CreateToken(desc);
-
         return Ok(new { token = handler.WriteToken(token) });
 
 

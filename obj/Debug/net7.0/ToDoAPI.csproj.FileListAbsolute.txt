@@ -49,3 +49,8 @@ C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protoco
 C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\package-lock.json
+C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\package.json
+C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\test-app\package-lock.json
+C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\test-app\package.json
+C:\Users\Khemi\Back-End\ToDoAPI\bin\Debug\net7.0\test-app\public\manifest.json
